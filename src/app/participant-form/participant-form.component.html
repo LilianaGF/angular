@@ -1,0 +1,36 @@
+<p>
+  <input type="text" placeholder='Initials:' [(ngModel)]="participant.initials"/>
+</p>
+
+<p>
+  <input type="text" placeholder = "{{ placeholderName }}" [(ngModel)]="participant.name" />
+</p>
+<!--
+<p>
+  {{ participant.name }}
+</p>
+-->
+<!--
+<p>
+  <input type="text" placeholder = 'Name:' />
+  <input type="text" placeholder = "{{ placeholderName }}" />
+  <input type="text" [placeholder] = "placeholderName" />
+  <input type="text" bind-placeholder = "placeholderName"  />
+</p>
+-->
+
+<p>
+  <input type="text" placeholder='Address:' [(ngModel)] = "participant.address" />
+</p>
+<p>
+  <input type="text" placeholder='Preferred Language:' [(ngModel)]="participant.preferredLanguage" />
+</p>
+
+<p>
+  <button (click)="newHandler(participant)"> New </button>
+</p>
+
+<p>
+    {{ status }} 
+</p>
+

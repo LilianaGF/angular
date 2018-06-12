@@ -1,0 +1,17 @@
+<div>
+  <ol>
+    <li *ngFor="let participant of participants" (click)="clickParticipantHandler(participant)">
+      {{ participant.name }}
+    </li>
+  </ol>
+<!--
+<p *ngIf="this.clickParticipant" >
+  You clicked: {{ clickParticipant.name }}
+</p>
+
+<p *ngIf="this.selectedParticipant">
+  Selected participant: {{ selectedParticipant.name }}
+</p>
+-->
+</div>
+
